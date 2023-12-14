@@ -17,13 +17,15 @@ const shopControllers = {
   {
 
     const product_id = req.params.product_id;
-    const jsonItem = await productsModel.getItem({product_id}); 
+    const jsonItem = await productsModel.getItem({product_id});
+    const products = await productsModel.getAll();
     //const jsonItem = funkosJSON.filter(item => item.product_id === parseInt(product_id))
 
     res.render("shop/detail", {
         view: {
           title: "Detail | Funkoshop",
         },
+        products: products.data,
         item: jsonItem.data,
         enableGlide: true,
       }); 
