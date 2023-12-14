@@ -1,0 +1,122 @@
+<%- include('../partials/header') %>
+<!-- MAIN -->
+
+    <main class="container">
+        <h1 class="carrito_de_compras">CARRITO DE COMPRAS
+        </h1>
+
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Detalle de Producto</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody class="cart-tbody">
+                <tr class="cart-tr">
+                    <td>
+                        <section class="item-section">
+                            <picture>
+                                <img src="/Funkoshop/public/img/star-wars/baby-yoda-1.webp"
+                                    alt="Figura coleccionable de Funko de Grogu de la serie The Mandolorian">
+                            </picture>
+                            <article class="item-article">
+                                <h3>BABY YODA BLUEBALL</h3>
+                                <p>STAR WARS
+                                </p>
+                                <span class="item-precio-unitario">Precio
+                                    unitario: $
+                                    1799,99</span>
+
+                            </article>
+                        </section>
+                    </td>
+                    <td>
+                        <div class="item-agregar_al_carrito item__cart">
+                            
+                            <div class="item-acciones">
+                                <button id="subtract" class="item__quantity" type="button">-</button>
+                                <input id="quantity" class="item__input" type="number" name="quantity" value="1">
+                                <button id="add" class="item__quantity" type="button">+</button>
+                            </div>
+                    </td>
+                    <td class="cart-td-precio">
+                        <p class="item-precio">$ 3599,98</p>
+                    </td>
+                    <td class="cart-td-button">
+                        <i class="fa-regular fa-circle-xmark fa-3x"
+                            style="color: #811509;"></i>
+                    </td>
+                </tr>
+
+                <tr class="cart-tr">
+                    <td>
+                        <section class="item-section">
+                            <picture>
+                                <img src="/Funkoshop/public/img/pokemon/pidgeotto-1.webp"
+                                    alt="Figura coleccionable de Funko de Grogu de la serie The Mandolorian">
+                            </picture>
+                            <article class="item-article">
+                                <h3>PIDGEOTTO</h3>
+                                <p>POKEMON
+                                </p>
+                                <span class="item-precio-unitario">Precio
+                                    unitario: $
+                                    1799,99</span>
+
+                            </article>
+                        </section>
+                    </td>
+                    <td>
+                        <div class="item-agregar_al_carrito item__cart">
+                           
+                            <div class="item-acciones">
+                                <button id="subtract" class="item__quantity" type="button">-</button>
+                                <input id="quantity" class="item__input" type="number" name="quantity" value="1">
+                                <button id="add" class="item__quantity" type="button">+</button>
+                            </div>
+                        </div>
+                       
+                           
+                    
+                    </td>
+                    <td class="cart-td-precio">
+                        <p class="item-precio">$ 1799,99</p>
+                    </td>
+                    <td class="cart-td-button">
+                        <i class="fa-regular fa-circle-xmark fa-3x"
+                            style="color: #ff1900;"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <section class="aside">
+            <aside class="resumen">
+                <h2>RESUMEN</h2>
+                <div class="resumen-total">
+                    <div>
+                        <h4>CANTIDAD DE ELEMENTOS</h4>
+                        <p>3</p>
+                    </div>
+                    <div>
+                        <h4>SUBTOTAL</h4>
+                        <p>$ 5.399,97</p>
+                    </div>
+                    <div>
+                        <h4>ENVÍO</h4>
+                        <p>0,00</p>
+                    </div>
+
+                    <div class="total">
+                        <h3>TOTAL</h3>
+                        <p>$ 5.399,97</p>
+                    </div>
+
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+<%- include('../partials/footer') %>
