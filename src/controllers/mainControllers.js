@@ -3,15 +3,21 @@ const productsModel = require("../models/productsModel");
 const mainControllers = {
   home: async (req, res) => {
     const products = await productsModel.getAll();
-    if (req.session.usario){
-      res.sendFile(__dirname + '/views/home.ejs', { usuario: req.session.usuario });
-    }
+    
+  /*   let isLogged = false;
+
+    if (req.session.user !== undefined) {
+      isLogged = true;
+     }  */
+
     res.render("home", {
       view: {
         title: "Home | Funkoshop",
+        slider_titulo: "Últimos lanzamientos"
       },
       collections: products.data,
-      enableGlide: true,
+      //isLogged:isLogged
+
     });
   },
 
@@ -20,16 +26,18 @@ const mainControllers = {
       view: {
         title: "Contact | Funkoshop",
       },
+     
      });
-  }, //res.send("Route for Contact View"),
+  }, 
   about: (req, res) => res.send("Route for About View"),
   cart: (req, res) => {
     res.render("shop/cart", {
       view: {
         title: "Cart | Funkoshop",
       },
+      
      });
-  }//res.send("Route for Faqs View"),
+  }
 };
 
 module.exports = mainControllers;

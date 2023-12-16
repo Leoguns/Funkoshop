@@ -1,18 +1,36 @@
 [
-    {
-      "nombre": "usuario1",
-      "apellido": "usuario1",
-      "usuario": "usuario1",
-      "email": "usuario1@example.com",
-      "contrasena": "1234",
-      "tipo": "usuario_normal"
-    },
-    {
-      "nombre": "usuario2",
-      "apellido": "usuario2",
-      "usuario": "usuario2",
-      "email": "usuario2@example.com",
-      "contrasena": "1234",
-      "tipo": "usuario_admin"
-    }
-  ]
+  {
+    "nombre": "usuario1",
+    "apellido": "usuario1",
+    "usuario": "usuario1",
+    "email": "usuario1@example.com",
+    "contrasena": "1234",
+    "tipo": "usuario_normal"
+  },
+  {
+    "nombre": "usuario2",
+    "apellido": "usuario2",
+    "usuario": "usuario2",
+    "email": "usuario2@example.com",
+    "contrasena": "1234",
+    "tipo": "usuario_admin"
+  },
+  {
+    "nombre": "Leonel",
+    "apellido": "Farias",
+    "email": "leoguns@gmail.com",
+    "contraseña": "1234"
+  },
+  {
+    "nombre": "asd",
+    "apellido": "asd",
+    "email": "asd@gmail.com",
+    "contraseña": "1234"
+  },
+  {
+    "nombre": "Rodrigo",
+    "apellido": "Farias",
+    "email": "fariasrodrigoleonel@gmail.com",
+    "contraseña": "1234"
+  }
+]

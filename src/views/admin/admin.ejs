@@ -19,7 +19,7 @@
           <% items.forEach(item => { %>
             <article class="admin-table__row">
                 <p><%= item.product_id %></p>
-                <p><%= item.sku %></p>
+                <p><%= item.product_sku %></p>
                 <p><%= item.product_name %></p>
                 <p><%= item.category_name %></p>
                 <a href="/admin/edit/<%= item.product_id %>"><iconify-icon icon="mdi:pencil" style="color: #1d84b5;"></iconify-icon></a>

@@ -22,6 +22,12 @@ app.use(session({
     saveUninitialized: false 
 }));
 
+// middleware to make 'user' available to all templates
+app.use(function(req, res, next) {
+    res.locals.user = req.session.user;
+    next();
+  })
+
 
 app.set ("view engine", "ejs")
 app.set ("views",path.join(__dirname,"/src/views"))
@@ -31,11 +37,11 @@ app.use (express.static(path.join(__dirname,"public")))
 app.use("/", mainRoutes);
 app.use ("/shop", shopRoutes);
 
-//app.use ("/admin", adminRoutes);
+app.use ("/admin", adminRoutes);
 app.use ("/auth", authRoutes);
 
-/*app.use(notFoundPage);
- */
+app.use(notFoundPage);
+
 app.listen (port,()=>{
     console.log(`Servidor para Concesionarias OK en el puerto ${port}`);
 })

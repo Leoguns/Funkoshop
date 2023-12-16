@@ -9,7 +9,8 @@ const shopControllers = {
       },
       //items: funkosJSON,
       items: products.data,
-      enableGlide: true,
+      //enableGlide: true,
+      nombre_usuario: ""
     });
   },
 
@@ -27,7 +28,6 @@ const shopControllers = {
         },
         products: products.data,
         item: jsonItem.data,
-        enableGlide: true,
       }); 
 
     

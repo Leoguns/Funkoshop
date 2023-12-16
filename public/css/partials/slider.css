@@ -17,3 +17,31 @@
     display: flex;
     gap: var(--spacing-24);
 }
+
+.contenedor-slider {
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+.grid-fixed {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
+
+/* OVERRIDE */
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
+}
+
